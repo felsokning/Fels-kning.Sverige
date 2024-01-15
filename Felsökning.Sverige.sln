@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Felsökning.Sverige", "Felsökning.Sverige\Felsökning.Sverige.csproj", "{FC18278C-1E65-42D6-B425-95EC9849896F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Felsökning.Sverige.Tests", "Felsökning.Sverige.Tests\Felsökning.Sverige.Tests.csproj", "{FED37948-9A7D-44F6-A99D-FA201A3A999F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC18278C-1E65-42D6-B425-95EC9849896F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC18278C-1E65-42D6-B425-95EC9849896F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC18278C-1E65-42D6-B425-95EC9849896F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC18278C-1E65-42D6-B425-95EC9849896F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FED37948-9A7D-44F6-A99D-FA201A3A999F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FED37948-9A7D-44F6-A99D-FA201A3A999F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FED37948-9A7D-44F6-A99D-FA201A3A999F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FED37948-9A7D-44F6-A99D-FA201A3A999F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {67DBCD56-7393-4460-8524-70CE2C890FCE}
+	EndGlobalSection
+EndGlobal
