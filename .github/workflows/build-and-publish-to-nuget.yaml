@@ -44,7 +44,8 @@ jobs:
       #     path: code-coverage-results.md
       - name: Adding markdown to build summary
         run: cat code-coverage-results.md >> $GITHUB_STEP_SUMMARY
+      # Breaking Change for dotnet pack: https://learn.microsoft.com/en-us/dotnet/core/compatibility/sdk/8.0/dotnet-pack-config
       - name: .NET Pack
-        run: dotnet pack /p:Version=${{ github.event.release.tag_name }}
+        run: dotnet pack --configuration Debug /p:Version=${{ github.event.release.tag_name }}
       - name: Push to NuGet
         run: dotnet nuget push "**/*.nupkg" --api-key ${{ secrets.NUGET_API_TOKEN }} --source https://api.nuget.org/v3/index.json
