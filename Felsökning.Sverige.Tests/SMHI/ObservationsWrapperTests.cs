@@ -96,7 +96,7 @@ namespace Felsökning.Sverige.Tests.SMHI
             stationResult.Should().NotBeNull();
             stationResult.Count.Should().BeGreaterThan(0);
 
-            var linköpingStation = stationResult.Find(x => x.Id == 85240);
+            var linköpingStation = stationResult.Find(x => x.Id == 97400);
 
             linköpingStation.Should().NotBeNull();
 

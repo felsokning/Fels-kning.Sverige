@@ -20,7 +20,7 @@ namespace Felsökning.Sverige.SMHI
         /// <summary>
         ///     Gets or sets the geometrical coordinates.
         /// </summary>
-        [JsonPropertyName("coordinates")]
+        //[JsonPropertyName("coordinates")]
         public List<List<List<object>>> Coordinates { get; set; } = new List<List<List<object>>>(0);
     }
 }
