@@ -4,7 +4,7 @@
     ///     Initializes a new instance of the <see cref="ArlandaExpressWrapper"/>, which is used to query for departure times for Arlanda Express.
     /// </summary>
     /// <inheritdoc cref="HttpBase"/>
-    public class ArlandaExpressWrapper : HttpBase
+    public class ArlandaExpressWrapper : HttpBase, IArlandaExpressWrapper
     {
         private const string _baseAddress = "https://api.atrain.se/v1/ecom/departures/upcomingDepartures/";
 
