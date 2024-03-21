@@ -1,5 +1,7 @@
 <img src="./images/bmc_qr.png"  width=10% height=10% alt="Buy Me a Coffee!">  &larr; If you would like to buy me a coffee
 
+![workflow](https://img.shields.io/github/actions/workflow/status/felsokning/Fels-kning.Sverige/build-and-publish-to-nuget.yaml) ![last commit](https://img.shields.io/github/last-commit/felsokning/Fels-kning.Sverige) ![commits since release](https://img.shields.io/github/commits-since/felsokning/Fels-kning.Sverige/latest.svg) ![top languages](https://img.shields.io/github/languages/top/felsokning/Fels-kning.Sverige) ![language count](https://img.shields.io/github/languages/count/felsokning/Fels-kning.Sverige) ![sponsors](https://img.shields.io/github/sponsors/felsokning)
+
 # Introduction 
 The [`Felsökning.Sverige` NuGet assembly](https://www.nuget.org/packages/Fels%C3%B6kning.Sverige) contains classes and methods specific to Sweden. 
 
@@ -21,10 +23,4 @@ From the `Fels-kning.Sverige` folder:
 
 
 # Contribute
-PR's are more than welcome! 😊 
-
---------------------------------------------
---------------------------------------------
---------------------------------------------
---------------------------------------------
---------------------------------------------
+![contributions](https://img.shields.io/badge/contributions-welcome-green)
