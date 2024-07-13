@@ -1,5 +1,8 @@
 ﻿namespace Felsökning.Sverige.SMHI
 {
+    /// <summary>
+    ///     Initializes a new instance of the <see cref="Station"/> class.
+    /// </summary>
     public class Station
     {
         /// <summary>
@@ -26,9 +29,15 @@
         [JsonPropertyName("summary")]
         public string Summary { get; set; } = string.Empty;
 
+        /// <summary>
+        ///     Gets or sets the links of the station.
+        /// </summary>
         [JsonPropertyName("link")]
         public List<Link> Link { get; set; } = new List<Link>(0);
 
+        /// <summary>
+        ///     Gets or sets the name of the station.
+        /// </summary>
         [JsonPropertyName("name")]
         public string Name { get; set; } = string.Empty;
 
@@ -39,6 +48,9 @@
         [JsonPropertyName("owner")]
         public string Owner { get; set; } = string.Empty;
 
+        /// <summary>
+        ///     Gets or sets the owner category of the station.
+        /// </summary>
         [JsonPropertyName("ownerCategory")]
         public string OwnerCategory { get; set; } = string.Empty;
 
@@ -52,15 +64,27 @@
         [JsonPropertyName("measuringStations")]
         public string MeasuringStations { get; set; } = string.Empty;
 
+        /// <summary>
+        ///     Gets or sets the id of the station.
+        /// </summary>
         [JsonPropertyName("id")]
         public int Id { get; set; }
 
+        /// <summary>
+        ///     Gets or sets the height of the station.
+        /// </summary>
         [JsonPropertyName("height")]
         public double Height { get; set; }
 
+        /// <summary>
+        ///     Gets or sets the latitude of the station.
+        /// </summary>
         [JsonPropertyName("latitude")]
         public double Latitude { get; set; }
 
+        /// <summary>
+        ///     Gets or sets the longitude of the station.
+        /// </summary>
         [JsonPropertyName("longitude")]
         public double Longitude { get; set; }
 
@@ -70,9 +94,15 @@
         [JsonPropertyName("active")]
         public bool Active { get; set; }
 
+        /// <summary>
+        ///     Gets or sets the from of the station.
+        /// </summary>
         [JsonPropertyName("from")]
         public object From { get; set; } = new object();
 
+        /// <summary>
+        ///     Gets or sets the to of the station.
+        /// </summary>
         [JsonPropertyName("to")]
         public object To { get; set; } = new object();
     }
