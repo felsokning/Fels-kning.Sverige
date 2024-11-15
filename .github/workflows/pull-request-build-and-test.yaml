@@ -1,10 +1,8 @@
-name: Build and Publish on MultiNet Container
+name: Build and Test
 
-# Required Since Release Creation in GitHub (itself) doesn't create a push (not remote)
 on:
-  release:
-    types:
-    - created
+    pull_request:
+        types: [opened, reopened, edited, synchronize, ready_for_review]
 
 jobs:
   build:
@@ -28,15 +26,5 @@ jobs:
           badge: true
           format: 'markdown'
           output: 'both'
-      # - name: Add Coverage PR Comment
-      #   uses: marocchino/sticky-pull-request-comment@v2
-      #   if: github.event_name == 'pull_request'
-      #   with:
-      #     recreate: true
-      #     path: code-coverage-results.md
       - name: Adding markdown to build summary
         run: cat code-coverage-results.md >> $GITHUB_STEP_SUMMARY
-      - name: .NET Pack
-        run: dotnet pack --configuration Debug /p:Version=${{ github.event.release.tag_name }}
-      - name: Push to NuGet
-        run: dotnet nuget push "**/*.nupkg" --api-key ${{ secrets.NUGET_API_TOKEN }} --source https://api.nuget.org/v3/index.json
